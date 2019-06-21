@@ -4,10 +4,39 @@
 }
 
 h1{
-  padding:5px;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
 }
 
+h2{
+  font-family: 'Poiret One', cursive;
+  color:#a5274b;
+}
+
+
+
+.container{
+  position:fixed;
+  color: #ffffff;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  height: 80px;
+  background-color:#a5274b;
+
+}
+
+.item{
+  margin:20px;
+}
+
+.right-edge{
+  margin: 0 50px 0 0;
+}
 
 .main-title{
   display:flex;
@@ -15,24 +44,29 @@ h1{
   justify-content:center;
   align-items:center;
   height: 100vh;
-  width: 100vw;
+  /*width: 100vw;*/
   text-align:center;
-  background-color:black;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   color: white;
 }
 
 .title-button{
-  width:300px;
+  font-family: 'Poiret One', cursive;
+  width:250px;
   height:60px;
   align-self:center;
   margin:50px;
-  background-color:black;
+  background-color:#a5274b;
   color:white;
   border-radius:20px;
-  font-size:30px;
+  font-size:20px;
   border: 5px solid white;
   transition: 0.5s;
+  outline: none;
+
 }
+
+
 
 .title-button:hover{
   background-color:white;
