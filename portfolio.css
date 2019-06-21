@@ -20,6 +20,21 @@ h2{
   color:#025F6C;
 }
 
+img{
+  width:200px;
+  height:200px;
+  background-color: #fff;
+  transition: 0.3s;
+  opacity: 1;
+  border-radius: 10%;
+}
+
+div.project:hover img{
+  opacity: 0.3;
+}
+
+
+
 /*Main Title Section*/
 
 .container{
@@ -119,12 +134,29 @@ h2{
 .singleP-section{
   display: flex;
   justify-content: center;
+  margin:20px 0;
 
 }
 
 .project{
-  background-color: #53C7D7;
+  background-color: #17252A;
   text-align: center;
+  margin:20px 20px;
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.5s;
+  border-radius: 10%;
+  box-shadow: 5px 5px #015D6A;
+}
+
+.project:hover{
+  transform: translateY(10px);
+}
+
+.caption{
+  padding: 10px 0;
 }
 
 #p-title{
