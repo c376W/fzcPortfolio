@@ -183,7 +183,7 @@ h2{
 @media(max-width: 450px){
   body{
     width:450px;
-    height:100vh;
+/*    height:100vh;*/
   }
   .container{
     width:450px;
