@@ -134,12 +134,12 @@ div.project:hover img{
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  font-size: 3rem;
 }
 
 .skill{
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
   margin: 20px 0;
 }
 
@@ -245,8 +245,17 @@ div.project:hover img{
   .title-button{
     font-size: 1rem;
   }
+  .skills{
+    font-size: 2rem;
+  }
   h1{
     font-size:2rem;
+  }
+}
+
+@media(max-width:380px){
+    .skills{
+    font-size:1rem;
   }
 }
 
@@ -254,6 +263,7 @@ div.project:hover img{
   .item{
     margin:1px;
   }
+
 }
 
 @keyframes fadein {
