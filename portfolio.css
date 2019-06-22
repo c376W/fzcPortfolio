@@ -13,11 +13,24 @@ html{
 h1{
   font-size: 3rem;
   font-family: 'Permanent Marker', cursive;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+  
 }
+
+
 
 h2{
   font-family: 'Poiret One', cursive;
   color:#025F6C;
+  -webkit-animation: fadein 1.3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.3s; /* Firefox < 16 */
+        -ms-animation: fadein 1.3s; /* Internet Explorer */
+         -o-animation: fadein 1.3s; /* Opera < 12.1 */
+            animation: fadein 1.3s;
 }
 
 img{
@@ -87,6 +100,7 @@ div.project:hover img{
   text-align:center;
   background-color:#3AAFA9;
   color: white;
+  
 }
 
 .title-button{
@@ -115,8 +129,18 @@ div.project:hover img{
 .skills{
   color:#fff;
   background-color: #53C7D7;
+  /*background-image: url(https://images.unsplash.com/photo-1548425083-4261538dbca4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.skill{
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  margin: 20px 0;
 }
 
 
@@ -129,6 +153,7 @@ div.project:hover img{
   background-color: #017888;
   align-items: center;
   justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
 }
 
 .singleP-section{
@@ -183,6 +208,7 @@ div.project:hover img{
 }
 
 .contact:hover{
+  color:#81EAD6;
   transform: rotate(10deg);
 }
 
@@ -228,6 +254,21 @@ div.project:hover img{
   .item{
     margin:1px;
   }
+}
+
+@keyframes fadein {
+    0% { 
+      opacity: 0;
+      transform: translateY(30px); 
+    }
+    50%   { 
+      opacity: 0.5; 
+      transform: translateY(-30px);
+    }
+    100%{
+      opacity:1;
+      transform: translateY(0);
+    }
 }
 
 
