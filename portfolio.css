@@ -184,6 +184,10 @@ div.project:hover img{
   padding: 10px 0;
 }
 
+.quotes{
+  font-size: 15px;
+}
+
 #p-title{
   color:#fff;
   padding:100px 0 50px 0;
