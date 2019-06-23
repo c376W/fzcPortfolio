@@ -222,6 +222,11 @@ img{
   font-size: 13px;
 }
 
+.link{
+  color:#f9fca6;
+  text-decoration: underline;
+}
+
 #p-title{
   color:#fff;
   padding:100px 0 50px 0;
