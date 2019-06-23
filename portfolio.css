@@ -207,14 +207,14 @@ img{
   height:200px;
   background-color:  #17252A;
   border-radius: 10%;
-/*  transition: 0.3s;
-  opacity:0;
+
+  /*opacity:0;*/
   transition:1s;*/
 }
 
-/*.init-none:hover{
+.init-none:hover{
   opacity:1;
-}*/
+}
 
 
 
