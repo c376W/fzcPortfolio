@@ -5,7 +5,7 @@
 
 html{
   scroll-behavior: smooth;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@ ul{
 
 h1{
   font-size: 3rem;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Raleway', sans-serif;
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
@@ -33,7 +33,8 @@ h1{
 
 h2{
   font-family: 'Poiret One', cursive;
-  color:#025F6C;
+  margin-top:20px;
+  color:#de8787;
   -webkit-animation: fadein 1.3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1.3s; /* Firefox < 16 */
         -ms-animation: fadein 1.3s; /* Internet Explorer */
@@ -45,13 +46,9 @@ img{
   width:200px;
   height:200px;
   background-color: #fff;
-  /*opacity:1;*/
   transition:0.5s;
 }
-/*img:hover{
-  opacity:0;
-}
-*/
+
 
 
 /*Main Title Section*/
@@ -61,15 +58,17 @@ img{
   top: 0;
   left: 0;
   color: #ffffff;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: row;
   width: 100%;
-  height: 80px;
-  background-color:#17252A;
+  height: 60px;
+  background-color:#222;
   transition-duration: 1s;
   text-decoration: none;
   z-index: 10;
@@ -79,21 +78,25 @@ img{
 .item{
   
   margin-right:20px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   background-color:#17252A;
-  color:#81EAD6;
+  color:#e82525;
   transition: 0.5s;
   text-decoration: none;
 }
 
 .item:hover{
-  transform: translateY(5px);
+  transform: translateY(2px);
   text-decoration: none;
   color:#fff;
 
+}
+
+
+#right-most{
+  margin-right:100px;
 }
 
 
@@ -103,35 +106,31 @@ img{
   justify-content:center;
   align-items:center;
   height: 100vh;
-  /*width: 100vw;*/
   text-align:center;
-  background-color:#3AAFA9;
+  background-color:#000;
   color: white;
   
 }
 
 .title-button{
-  font-family: 'Permanent Marker', cursive;
-  background-color: #17252A;
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
   align-self:center;
   margin:50px;
-  border-radius:20px;
-  font-size:2rem;
+  font-size:3rem;
   transition: 0.5s;
   outline: none;
   color:#fff;
   text-decoration: none;
   padding:10px;
-  border: 5px solid #fff;
 
 }
 
 .title-button:hover{
-  color:#17252A;
-  background-color: #fff;
+  color:#e82525;
 }
 
-/*Skills Section*/
+/*About Section*/
 
 .skill-title{
   text-align: center;
@@ -141,8 +140,7 @@ img{
 .skills{
   padding:20px;
   color:#fff;
-  background-color: #53C7D7;
-  /*background-image: url(https://images.unsplash.com/photo-1548425083-4261538dbca4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);*/
+  background-color: #333;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -166,7 +164,7 @@ img{
   background-color: #017888;
   align-items: center;
   justify-content: center;
-  background-image: url(https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-color: #111;
 }
 
 .singleP-section{
@@ -236,7 +234,7 @@ img{
 /*Contact Section*/
 
 .contacts{
-  background-color: #015D6A;
+  background-color:#222;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

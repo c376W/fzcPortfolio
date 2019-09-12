@@ -2,27 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed|Raleway|Poiret+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <script src="https://kit.fontawesome.com/5081ea1177.js"></script>
 
-
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
   </head>
   <body>
 
     <!-- Navbar -->
-    <nav>
-      <div class="container">
-          <div ><a class="item" href="#skills">Skills</a></div>
-          <div ><a class="item" href="#projects-section">Projects</a></div>
-          <div ><a class="item" href="#contacts">Contact</a></div>
-           
+    <nav id="home">
+      <div class="container" >
+        <div ><a class="item" href="#home">HOME</a></div>
+        <div ><a class="item" href="#skills">ABOUT</a></div>
+        <div ><a class="item" href="#projects-section">PROJECTS</a></div>
+        <div ><a class="item" href="#contacts" id="right-most">CONTACT</a></div>    
       </div>
       
     </nav>
@@ -31,13 +29,13 @@
     <div class="main-title">
       <h1>Zhaochen Feng</h1>
       <h2>A Web Developer</h2>
-      <a class="title-button" href="#projects-section">View my work</a>
+      <a class="title-button" href="#projects-section"><i class="fas fa-arrow-circle-down"></i></a>
     </div>
 
-    <!-- Skills Sections -->
+    <!-- About Sections -->
     <div id="skills" class="skills">
       <div class="skill-title">
-        <h1>My Skill Set</h1>
+        <h1>About</h1>
       </div>
       <div class="skill">
         <div class="front-end">
@@ -60,7 +58,7 @@
 
     <!--Projects Section  -->
     <div id="projects-section" class="projects-section">
-      <h1 id="p-title"><i class="fas fa-project-diagram"></i> These are some of my projects.</h1>
+      <h1 id="p-title">Projects</h1>
         <div class="singleP-section">
 
           <div class="project">
@@ -172,6 +170,6 @@
     </div>
 
  
-  <script type="text/javascript" src="portfolio.js"></script> 
+  <script type="text/javascript" src="js/portfolio.js"></script> 
   </body>
 </html>
