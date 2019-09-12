@@ -75,6 +75,29 @@ img{
 
 }
 
+a.item{
+  position: relative;
+  padding: 5px;
+}
+
+a.item:after {    
+  /*background: none repeat scroll 0 0 transparent;*/
+  bottom: 0;
+  content: "";
+  /*display: block;*/
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a.item:hover:after { 
+  width: 80%; 
+  left: 10%; 
+}
+
+
 .item{
   
   margin-right:20px;
@@ -88,7 +111,6 @@ img{
 }
 
 .item:hover{
-  transform: translateY(2px);
   text-decoration: none;
   color:#fff;
 
