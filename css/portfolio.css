@@ -18,14 +18,9 @@ ul{
 }
 
 
-h1{
+h1.typewriter-text{
   font-size: 3rem;
   font-family: 'Raleway', sans-serif;
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
   
 }
 
@@ -35,11 +30,7 @@ h2{
   font-family: 'Poiret One', cursive;
   margin-top:20px;
   color:#de8787;
-  -webkit-animation: fadein 1.3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1.3s; /* Firefox < 16 */
-        -ms-animation: fadein 1.3s; /* Internet Explorer */
-         -o-animation: fadein 1.3s; /* Opera < 12.1 */
-            animation: fadein 1.3s;
+  opacity: 0;
 }
 
 img{
@@ -121,6 +112,55 @@ a.item:hover:after {
   margin-right:100px;
 }
 
+
+.typewriter {
+    font-family: Courier, monospace;
+    display: inline-block;
+    color:#fff;
+}
+
+.typewriter-text {
+    /*display: inline-block;*/
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 0.5s steps(30, end), blink .5s step-end 1;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid #000;
+    box-sizing: border-box;
+}
+
+#delay-typing{
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    0% { 
+        width: 0% 
+    }
+    50%{
+        opacity: 1; 
+    }
+    100% { 
+        width: 100%;
+        opacity:1;
+
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent; 
+    }
+    50% { 
+        border-color: orange; 
+    }
+    100%{
+      border-color: transparent;
+    }
+}
 
 .main-title{
   display:flex;
