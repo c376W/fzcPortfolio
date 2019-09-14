@@ -17,7 +17,7 @@ ul{
 
 h1.typewriter-text{
   font-size: 3rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Permanent Marker', cursive;
   
 }
 
@@ -35,6 +35,11 @@ img{
   height:200px;
   background-color: #fff;
   transition:0.5s;
+}
+
+canvas{
+  z-index: 0;
+  /*position: absolute;*/
 }
 
 
@@ -133,6 +138,7 @@ a.item button{
     font-family: Courier, monospace;
     display: inline-block;
     color:#fff;
+
 }
 
 .typewriter-text {
@@ -187,7 +193,14 @@ a.item button{
   text-align:center;
   background-color:#000;
   color: white;
+  position: relative;
   
+}
+.main-title-content{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
 }
 
 .title-button{
