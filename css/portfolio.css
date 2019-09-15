@@ -334,11 +334,90 @@ a.item button{
   background-color: #de8787;
   color:#fff;
   margin:5px;
-  width:90%;
-  animation: nav-bar-movementA;
   animation-duration: .5s;
   font-size: 2rem;
   padding:5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #000;
+}
+.a-1{
+  animation:aA;
+  width:100%;
+}
+.a-2{
+  animation:aB;
+  width:90%;
+}
+.a-3{
+  animation:aC;
+  width:85%;
+}
+.a-4{
+  animation:aD;
+  width:50%;
+}
+.a-5{
+  animation:aE;
+  width:30%;
+}
+.a-6{
+  animation:aF;
+  width:30%;
+}
+.a-1,.a-2,.a-3,.a-4,.a-5,.a-6{
+  animation-duration: 1s;
+}
+@keyframes aA{
+  0%{
+    width:0;
+  }
+  100%{
+    width:100%;
+  }
+}
+@keyframes aB{
+  0%{
+    width:0;
+  }
+  100%{
+    width:90%;
+  }
+}
+@keyframes aC{
+  0%{
+    width:0;
+  }
+  100%{
+    width:85%;
+  }
+}
+@keyframes aD{
+  0%{
+    width:0;
+  }
+  100%{
+    width:50%;
+  }
+}
+@keyframes aE{
+  0%{
+    width:0;
+  }
+  100%{
+    width:30%;
+  }
+}
+@keyframes aF{
+  0%{
+    width:0;
+  }
+  100%{
+    width:30%;
+  }
+}
+
+#last-skill{
+  margin-bottom: 100px;
 }
 .skills{
   padding:20px;
