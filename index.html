@@ -17,6 +17,12 @@
     <!-- Navbar -->
     <nav>
       <ul class="container" >
+        <div class="nav-hamburger">
+          <div class="nav-ham-bar1"></div>
+          <div class="nav-ham-bar2"></div>
+          <div class="nav-ham-bar3"></div>
+
+        </div>
         <a class="item" href="#home" id="test-a"><!-- <li class="testa">Home</li> -->HOME</a>
         <a class="item" href="#skills">ABOUT</a>
         <a class="item" href="#projects-section">PROJECTS</a>
@@ -24,159 +30,167 @@
       </ul>
       
     </nav>
+    <ul class="collapsed-navlinks">
+      <a href="#home"><li>HOME</li></a>
+      <a href="#skills"><li>ABOUT</li></a>
+      <a href="#projects-section"><li>PROJECTS</li></a>
+      <a href="#contacts"><li>CONTACT</li></a>
+    </ul>
 
 
 
 
     <!-- Main title section -->
-
-    <div class="main-title" id="home">
-      <div class="main-title-content">
-          <div class="typewriter">
-            <h1 class="typewriter-text">Zhaochen Feng</h1>
-            <h2 class="typewriter-text" id="delay-typing">A Web Developer</h2>
+    <div class="flyaway-wrapper">
+      <div class="main-title" id="home">
+        <div class="main-title-content">
+            <div class="typewriter">
+              <div class="typewriter-text">Zhaochen Feng</div>
+              <h2 class="typewriter-text" id="delay-typing">A Web Developer</h2>
+          </div>
+          <a class="title-button" href="#skills"><i class="fas fa-arrow-circle-down"></i></a>
+          
         </div>
-        <a class="title-button" href="#skills"><i class="fas fa-arrow-circle-down"></i></a>
+        
+        <canvas id="sky"></canvas>
+      </div>
+
+      <!-- About Sections -->
+      <div id="skills" class="skills">
+        <div class="skill-title">
+          <h1>About</h1>
+        </div>
+        <div class="skill">
+          <div class="front-end">
+            <div>Front-End</div>
+            <div> <i style="color:orange" class="fab fa-html5"></i> HTML5</div>
+            <div><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div><i class="fab fa-js"></i> Javascript</div>
+            <div><i class="fab fa-react"></i> React</div>  
+          </div>
+          <div class="back-end">
+            <div>Back-End</div>
+            <div>PHP</div>
+            <div>MySQL</div>
+          </div>    
+        </div>
+        
         
       </div>
-      
-      <canvas id="sky"></canvas>
-    </div>
 
-    <!-- About Sections -->
-    <div id="skills" class="skills">
-      <div class="skill-title">
-        <h1>About</h1>
-      </div>
-      <div class="skill">
-        <div class="front-end">
-          <div>Front-End</div>
-          <div> <i style="color:orange" class="fab fa-html5"></i> HTML5</div>
-          <div><i class="fab fa-css3-alt"></i> CSS3</div>
-          <div><i class="fab fa-js"></i> Javascript</div>
-          <div><i class="fab fa-react"></i> React</div>  
-        </div>
-        <div class="back-end">
-          <div>Back-End</div>
-          <div>PHP</div>
-          <div>MySQL</div>
-        </div>    
-      </div>
-      
-      
-    </div>
+      <!--Projects Section  -->
+      <div id="projects-section" class="projects-section">
+        <h1 id="p-title">Projects</h1>
+          <div class="singleP-section">
 
-    <!--Projects Section  -->
-    <div id="projects-section" class="projects-section">
-      <h1 id="p-title">Projects</h1>
-        <div class="singleP-section">
+            <div class="project">
+              <div class="caption quotes"><i class="fas fa-globe"></i> Portfolio Website</div>
+              <a href="#">
+                <img class="animated fadeIn" src="img/portfolio.png">
+                <div class="init-none">
+                  Project Components:
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JS</li>
+                    <br>
+                    <li class="link">Proj Link</li>
+                  </ul></div>
+                <div class="caption">More Info</div>
+              </a>
+              
 
-          <div class="project">
-            <div class="caption quotes"><i class="fas fa-globe"></i> Portfolio Website</div>
-            <a href="#">
-              <img class="animated fadeIn" src="img/portfolio.png">
-              <div class="init-none">
-                Project Components:
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>JS</li>
-                  <br>
-                  <li class="link">Proj Link</li>
-                </ul></div>
-              <div class="caption">More Info</div>
-            </a>
-            
+            </div>  
 
-          </div>  
+            <div class="project">
+              
+              <a href="https://c376w.github.io/colorGame/">
+                <div class="caption"><i class="fas fa-gamepad"></i> Color Game</div>
+                <img class="animated fadeIn" src="img/color_game.png">
+                <div class="init-none">
+                  Project Components:
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Vanilla JS</li>
+                    <li>Bootstrap4</li>
+                    <br>
+                    <li class="link">Proj Link</li>
+                  </ul>
+                </div>
+               <div class="caption">More Info</div> 
+              </a>
+              
+              
+            </div>   
+            <div class="project">
+              <div class="caption"><i class="fas fa-list-alt"></i> To-do List</div>
+              <a href="https://c376w.github.io/todoList/">
+                <img class="animated fadeIn" src="img/todo-list.png">
+                <div class="init-none">
+                  Project Components:
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>jQuery</li>
+                    <br>
+                    <li class="link">Proj Link</li>
+                  </ul></div>
+                <div class="caption">More Info</div>
+              </a>
+              
 
-          <div class="project">
-            
-            <a href="https://c376w.github.io/colorGame/">
-              <div class="caption"><i class="fas fa-gamepad"></i> Color Game</div>
-              <img class="animated fadeIn" src="img/color_game.png">
-              <div class="init-none">
-                Project Components:
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Vanilla JS</li>
-                  <li>Bootstrap4</li>
-                  <br>
-                  <li class="link">Proj Link</li>
-                </ul>
-              </div>
-             <div class="caption">More Info</div> 
-            </a>
-            
-            
-          </div>   
-          <div class="project">
-            <div class="caption"><i class="fas fa-list-alt"></i> To-do List</div>
-            <a href="https://c376w.github.io/todoList/">
-              <img class="animated fadeIn" src="img/todo-list.png">
-              <div class="init-none">
-                Project Components:
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>jQuery</li>
-                  <br>
-                  <li class="link">Proj Link</li>
-                </ul></div>
-              <div class="caption">More Info</div>
-            </a>
-            
+            </div>
+            <div class="project">
+              <div class="caption quotes"><i class="fas fa-comments"></i> Random Quotes Machine</div>
+              <a href=" https://c376w.github.io/randomQuotes/.">
+                <img class="animated fadeIn" src="img/quotes.png">
+                <div class="init-none">
+                  Project Components:
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>jQuery</li>
+                    <li>Random Quotes API</li>
+                    <br>
+                    <li class="link">Proj Link</li>
+                  </ul></div>
+                <div class="caption">More Info</div>
+              </a>
+              
 
+            </div>
+            <div class="project">
+              <div class="caption quotes"><i class="fas fa-cat"></i> Search Kitties</div>
+              <a href="https://c376w.github.io/robofriends/">
+                <img class="animated fadeIn" src="img/search-kitties.png">
+                <div class="init-none">
+                  Project Components:
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>React App</li>
+                    <li>Users + Kitties API</li>
+                    <br>
+                    <li class="link">Proj Link</li>
+                  </ul></div>
+                <div class="caption">More Info</div>
+              </a>
+              
+
+            </div>          
           </div>
-          <div class="project">
-            <div class="caption quotes"><i class="fas fa-comments"></i> Random Quotes Machine</div>
-            <a href=" https://c376w.github.io/randomQuotes/.">
-              <img class="animated fadeIn" src="img/quotes.png">
-              <div class="init-none">
-                Project Components:
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>jQuery</li>
-                  <li>Random Quotes API</li>
-                  <br>
-                  <li class="link">Proj Link</li>
-                </ul></div>
-              <div class="caption">More Info</div>
-            </a>
-            
+              
+      </div>
+    
 
-          </div>
-          <div class="project">
-            <div class="caption quotes"><i class="fas fa-cat"></i> Search Kitties</div>
-            <a href="https://c376w.github.io/robofriends/">
-              <img class="animated fadeIn" src="img/search-kitties.png">
-              <div class="init-none">
-                Project Components:
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>React App</li>
-                  <li>Users + Kitties API</li>
-                  <br>
-                  <li class="link">Proj Link</li>
-                </ul></div>
-              <div class="caption">More Info</div>
-            </a>
-            
-
-          </div>          
-        </div>
-            
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contacts" class="contacts">
-        <a class="contact" href="https://github.com/c376W"><i class="fab fa-github-alt"></i> GitHub</a>
-        <a class="contact" href="https://www.linkedin.com/in/zhaochen-feng/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a class="contact" href="https://codepen.io/fzc/"><i class="fab fa-codepen"></i> CodePen</a>    
-        <a class="contact" href="#"><i class="fas fa-globe"></i> Website</a>     
+      <!-- Contact Section -->
+      <div id="contacts" class="contacts">
+          <a class="contact" href="https://github.com/c376W"><i class="fab fa-github-alt"></i> GitHub</a>
+          <a class="contact" href="https://www.linkedin.com/in/zhaochen-feng/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a class="contact" href="https://codepen.io/fzc/"><i class="fab fa-codepen"></i> CodePen</a>    
+          <a class="contact" href="#"><i class="fas fa-globe"></i> Website</a>     
+      </div>
     </div>
 
   <script

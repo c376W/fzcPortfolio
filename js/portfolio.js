@@ -39,7 +39,7 @@ for (var i = 0;i<mf;i++){
 	flakes.push({
 		x: Math.random()*W,
 		y: Math.random()*H,
-		r: Math.random()*5+2,//min of 2px and max of 7px
+		r: Math.random()*3+2,//min of 2px and max of 7px
 		d: Math.random()+1 // density of the flake
 	})
 }
@@ -50,7 +50,28 @@ setInterval(drawFlakes,25);
 
 window.addEventListener('resize',init,false);
 
+//Nav bar hamburger
+var ham_button=document.querySelector(".nav-hamburger");
+var collapseSec=document.querySelector(".collapsed-navlinks");
+ham_button.addEventListener("click",function(){
+	if(collapseSec.classList[1]!=="collapse-show"){
+		collapseSec.classList.add("collapse-show");
+	}else{
+		collapseSec.classList.remove("collapse-show");
+	}
 	
+})
+
+
+//Nav bar fly away
+collapseSec.addEventListener("mouseleave",function(){
+	console.log(collapseSec.classList);
+	collapseSec.classList.remove("collapse-show");
+})
+var flyaway=document.querySelector(".flyaway-wrapper");
+flyaway.addEventListener("click",function(){
+	collapseSec.classList.remove("collapse-show");
+})	
 
 // Clean up
 
@@ -110,7 +131,6 @@ function onScroll(event){
     $('.container a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        console.log(refElement.position().top);
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('.item').removeClass("active");
             currLink.addClass("active");

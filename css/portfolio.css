@@ -15,7 +15,7 @@ ul{
 }
 
 
-h1.typewriter-text{
+div.typewriter-text{
   font-size: 3rem;
   font-family: 'Permanent Marker', cursive;
   
@@ -42,6 +42,105 @@ canvas{
   /*position: absolute;*/
 }
 
+.nav-hamburger{
+  margin-right:auto;
+  margin-left:100px;
+  width:40px;
+  height:40px;
+  background-color: transparent;
+  border:2px solid #de8787;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  cursor: pointer;
+  opacity: 0;
+
+}
+
+.nav-ham-bar1{
+  width:30px;
+  animation: nav-bar-movementA;
+}
+.nav-ham-bar2{
+  width:20px;
+  animation: nav-bar-movementB;
+  animation-delay: .1s;
+  
+}
+.nav-ham-bar3{
+  width:10px;
+  animation: nav-bar-movementC;
+  animation-delay: .2s;
+}
+.nav-ham-bar1,.nav-ham-bar2,.nav-ham-bar3{
+  margin-left:5px;
+  margin-bottom:5px;
+  height:3px;
+  background-color: #de8787;
+  animation-duration: .5s;
+  transition: .3s;
+}
+.nav-hamburger:hover .nav-ham-bar1{
+  width:10px;
+}
+.nav-hamburger:hover .nav-ham-bar2{
+  width:30px;
+}
+.nav-hamburger:hover .nav-ham-bar3{
+  width:20px;
+}
+
+@keyframes nav-bar-movementA{
+  0%{
+    width:0;
+  }
+  100%{
+    width:30px;
+  }
+}
+@keyframes nav-bar-movementB{
+  0%{
+    width:0;
+  }
+  100%{
+    width:20px;
+  }
+}
+@keyframes nav-bar-movementC{
+  0%{
+    width:0;
+  }
+  100%{
+    width:10px;
+  }
+}
+
+.collapsed-navlinks{
+  position: fixed;
+  top:0px;
+  transform: translate3d(0,-300px,0);
+  z-index: 30;
+  background-color: #de8787;
+  width:100%;
+  transition: .3s;
+}
+.collapse-show{
+  transform:translate3d(0,60px,0);
+}
+.collapsed-navlinks li{
+  margin-left: 50px;
+  padding:8px 0;
+  font-weight: bold;
+}
+
+.collapsed-navlinks a{
+  color:#000;
+  text-decoration:none;
+}
+
+
 
 /*Main Title Section*/
 
@@ -57,7 +156,6 @@ canvas{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-direction: row;
   width: 100%;
   height: 60px;
   background-color:#222;
@@ -355,9 +453,21 @@ a.item button{
 }
 
 @media(max-width:670px){
+  nav .item{
+    display:none;
+  }
   .singleP-section{
     flex-wrap: wrap;
   }
+  div.typewriter-text,h2.typewriter-text{
+    font-size: 1.5rem;
+  }
+  .nav-hamburger{
+    opacity: 1;
+  }
+
+
+
 }
 
 @media(max-width: 565px){
