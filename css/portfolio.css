@@ -122,7 +122,7 @@ canvas{
   top:0px;
   transform: translate3d(0,-300px,0);
   z-index: 30;
-  background-color: #de8787;
+  background-color: rgba( 222, 135, 135,0.8);
   width:100%;
   transition: .3s;
 }
@@ -593,6 +593,9 @@ a.item button{
 @media(max-width:380px){
     .skills{
     font-size:1rem;
+  }
+  .nav-hamburger{
+    margin-left: 50px;
   }
 }
 
