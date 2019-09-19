@@ -10,6 +10,10 @@ html{
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 ul{
   list-style: none;
 }
@@ -439,7 +443,9 @@ a.item button{
 
 
 
-/*Projects Section*/
+/*
+  Projects Section
+*/
 
 .projects-section{
   display: flex;
@@ -459,7 +465,7 @@ a.item button{
 }
 
 .project{
-  background-color: #17252A;
+  background-color: #471e1e;
   text-align: center;
   margin:20px 20px;
   color:#fff;
@@ -467,7 +473,9 @@ a.item button{
   flex-direction: column;
   justify-content: flex-end;
   transition: 0.5s;
-  border-radius: 10%;
+  border-radius: 5px;
+  /*width:200px;*/
+  box-shadow: 3px 3px 3px #444;
 }
 
 .project:hover{
