@@ -96,7 +96,56 @@ flyaway.addEventListener("click",function(){
 	collapseSec.classList.remove("collapse-show");
 })	
 
+//Project Displaying animation
+var projects=document.querySelectorAll(".project");
+console.log(projects);
+//Displaying all
+var All=document.querySelector(".all-btn");
+All.addEventListener("click",function(){
+	projects.forEach(el=>{
+		el.classList.remove("hide");
+	})
+})
+
+//Displaying jQuery projects
+
+var jQuery_btn=document.querySelector(".jQuery-btn");
+jQuery_btn.addEventListener("click",function(){
+	hide("jQuery");
+	show("jQuery");
+});
+
+//Displaying pure JS projects
+var js=document.querySelector(".JS-btn");
+js.addEventListener("click",function(){
+	hide("JS");
+	show("JS");
+})
+
 // Clean up
+
+function hide(string){
+	projects.forEach(el=>{
+		if(el.classList[1]!==string){
+			el.classList.remove("show");
+			el.classList.add("hide");
+		}
+		console.log("string");
+
+	})
+
+}
+function show(string){
+	projects.forEach(el=>{
+		if(el.classList[1]===string){
+			el.classList.remove("hide");
+			el.classList.add("show");
+		}
+		console.log("string");
+
+	})
+
+}
 
 function setColor(){
 	alinks.forEach(el=>{
