@@ -166,6 +166,7 @@ canvas{
   transition-duration: 1s;
   text-decoration: none;
   z-index: 10;
+  border-bottom:2px solid #de8787;
 
 }
 
@@ -327,6 +328,7 @@ a.item button{
   text-align: center;
   margin:80px;
   width:100%;
+  color:#000;
 }
 .about-els{
   /*display: flex;
@@ -426,7 +428,7 @@ a.item button{
 .skills{
   padding:20px;
   color:#fff;
-  background-color: #333;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -450,11 +452,12 @@ a.item button{
 .projects-section{
   display: flex;
   flex-direction: column;
-  background-color: #017888;
   align-items: center;
   justify-content: center;
-  background-color: #111;
+  background-color: #eee;
+  position: relative;
 }
+
 
 .singleP-section{
   display: flex;
@@ -518,7 +521,7 @@ a.item button{
 }
 
 #p-title{
-  color:#fff;
+  color:#000;
   padding:100px 0 50px 0;
 }
 
@@ -541,7 +544,7 @@ a.item button{
 }
 
 .contact:hover{
-  color:#81EAD6;
+  color: #de8787;
   transform: rotate(10deg);
 }
 
