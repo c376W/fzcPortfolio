@@ -523,6 +523,7 @@ a.item button{
   align-items: center;
   top:20%;
 }
+
 .p-button{
   position: absolute;
   cursor: pointer;
@@ -558,6 +559,9 @@ a.item button{
   left:35%;
   top:20%;
   opacity:1;
+}
+.project:hover #real-estate,.project:hover #math-game{
+  left:25%;
 }
 .project:hover .p-button{
   right:32%;
