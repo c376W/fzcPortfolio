@@ -452,80 +452,7 @@ a.item button{
 /*
   Projects Section
 */
-/*
-.projects-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #eee;
-  position: relative;
-}
 
-
-.singleP-section{
-  display: flex;
-  justify-content: center;
-  margin:20px 0;
-  flex-wrap: wrap;
-
-}
-
-.project{
-  background-color: #471e1e;
-  text-align: center;
-  margin:20px 20px;
-  color:#fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  transition: 0.5s;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px #444;
-}
-
-.project:hover{
-  color:#81EAD6;
-  transform: translateY(10px);
-}
-
-.caption{
-  padding: 10px 0;
-  text-decoration: none;
-  color:#fff;
-}
-
-.init-none{
-  display: none;
-  color:#7cf8ff;
-  width:200px;
-  height:200px;
-  background-color:  #17252A;
-  border-radius: 10%;
-
-
-  transition:1s;
-}
-
-.init-none:hover{
-  opacity:1;
-}
-
-
-
-.quotes{
-  font-size: 13px;
-}
-
-.link{
-  color:#f9fca6;
-  text-decoration: underline;
-}
-
-#p-title{
-  color:#000;
-  padding:100px 0 50px 0;
-}*/
 
 .projects{
   display: flex;
@@ -539,7 +466,9 @@ a.item button{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
+  
 .project-nav{
   display: flex;
   width:100%;
@@ -567,7 +496,7 @@ a.item button{
 }
 
 .hide{
-  transform: scale(0);
+  opacity: 0.1;
 }
 .show{
   transform:scale(1);
@@ -575,6 +504,14 @@ a.item button{
 .project{
   position: relative;
   transition: 1s;
+}
+.project i{
+  color:#de8787;
+  font-size: 4rem;
+  position: absolute;
+  z-index: 20;
+  top:20px;
+  opacity: 0;
 }
 .project-cover{
   position: absolute;
@@ -585,6 +522,18 @@ a.item button{
   z-index: 2;
   transition: .5s;
 }
+/*.chosen-proj{
+  width:400px;
+  height:300px;
+  background-color:rgba(222, 135, 135,0.8);
+  position: absolute;
+  top:0;
+  z-index: 3;
+  transition: .5s;
+}
+.chosen-proj:hover{
+  background-color:rgba(222, 135, 135,0);
+}*/
 .project-info{
   position: absolute;
   left:0px;
