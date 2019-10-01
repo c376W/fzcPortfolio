@@ -301,6 +301,30 @@ a.item button{
   position: absolute;
   z-index: 2;
 }
+.title-background-section{
+  width:100%;
+  position: absolute;
+  bottom:20%;
+}
+.title-background-animation{
+  width:80%;
+  height:2px;
+  margin:5px;
+  background-color: #de8787;
+  opacity:0.5;
+}
+.width2{
+  width:70%;
+}
+.width3{
+  width:60%;
+}
+.width4{
+  width:50%;
+}
+.width5{
+  width:40%;
+}
 
 .title-button{
   font-family: 'Raleway', sans-serif;
