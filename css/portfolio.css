@@ -290,7 +290,9 @@ a.item button{
   align-items:center;
   height: 100vh;
   text-align:center;
-  background-color:#000;
+  background-image: url("../img/title-background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
   color: white;
   position: relative;
   
@@ -301,18 +303,7 @@ a.item button{
   position: absolute;
   z-index: 2;
 }
-.title-background-section{
-  width:100%;
-  position: absolute;
-  bottom:20%;
-}
-.title-background-animation{
-  width:80%;
-  height:2px;
-  margin:5px;
-  background-color: #de8787;
-  opacity:0.5;
-}
+
 .width2{
   width:70%;
 }
